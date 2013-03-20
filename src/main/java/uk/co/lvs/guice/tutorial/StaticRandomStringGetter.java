@@ -1,4 +1,4 @@
-package com.github.davidedmonds.guiceexample.staticsingleton;
+package uk.co.lvs.guice.tutorial;
 
 import us.monoid.web.Resty;
 

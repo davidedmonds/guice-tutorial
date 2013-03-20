@@ -1,6 +1,8 @@
-package com.github.davidedmonds.guiceexample.staticsingleton;
+package uk.co.lvs.guice.tutorial;
 
 import org.junit.Test;
+
+import uk.co.lvs.guice.tutorial.StaticRandomStringGetter;
 
 import static junit.framework.Assert.assertEquals;
 
