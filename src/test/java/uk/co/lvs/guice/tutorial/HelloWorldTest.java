@@ -1,22 +1,20 @@
 package uk.co.lvs.guice.tutorial;
 
+import static junit.framework.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
-import uk.co.lvs.guice.tutorial.HelloWorld;
-
-import static junit.framework.Assert.assertEquals;
-
 public class HelloWorldTest {
-    private HelloWorld helloStaticWorld;
+    private HelloWorld helloWorld;
 
     @Before
     public void setUp() {
-        helloStaticWorld = new HelloWorld();
+        helloWorld = new HelloWorld();
     }
 
     @Test
     public void labelShouldBeSetToA10CharacterLongString() {
-        assertEquals(10, helloStaticWorld.getLabel().getText().trim().length());
+        assertEquals(10, helloWorld.getLabel().getText().trim().length());
     }
 }
