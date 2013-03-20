@@ -15,14 +15,14 @@ public class HelloWorld {
         shell = new Shell(display);
         label = new Label(shell, SWT.NONE);
         label.setText(HttpRandomStringGetter.getInstance().getNextWord());
-        shell.pack();
-        label.pack();
-        shell.open();
     }
 
     public void run() {
-        while(!shell.isDisposed()) {
-            if(!display.readAndDispatch()) {
+        shell.pack();
+        label.pack();
+        shell.open();
+        while (!shell.isDisposed()) {
+            if (!display.readAndDispatch()) {
                 display.sleep();
             }
         }
