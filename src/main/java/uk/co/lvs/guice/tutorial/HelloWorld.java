@@ -5,16 +5,16 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 
-public class HelloStaticWorld {
+public class HelloWorld {
     private Label label;
     private Display display;
     private Shell shell;
 
-    public HelloStaticWorld() {
+    public HelloWorld() {
         display = Display.getDefault();
         shell = new Shell(display);
         label = new Label(shell, SWT.NONE);
-        label.setText(StaticRandomStringGetter.getInstance().getNextWord());
+        label.setText(HttpRandomStringGetter.getInstance().getNextWord());
         shell.pack();
         label.pack();
         shell.open();
@@ -38,7 +38,7 @@ public class HelloStaticWorld {
     }
 
     public static void main(String[] args) {
-        HelloStaticWorld hello = new HelloStaticWorld();
+        HelloWorld hello = new HelloWorld();
         hello.run();
         hello.dispose();
     }

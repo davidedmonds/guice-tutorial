@@ -4,13 +4,13 @@ import us.monoid.web.Resty;
 
 import java.io.IOException;
 
-public class StaticRandomStringGetter {
-    private static final StaticRandomStringGetter INSTANCE = new StaticRandomStringGetter();
+public class HttpRandomStringGetter {
+    private static final HttpRandomStringGetter INSTANCE = new HttpRandomStringGetter();
 
-    private StaticRandomStringGetter() {
+    private HttpRandomStringGetter() {
     }
 
-    public static StaticRandomStringGetter getInstance() {
+    public static HttpRandomStringGetter getInstance() {
         return INSTANCE;
     }
 

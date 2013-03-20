@@ -3,16 +3,16 @@ package uk.co.lvs.guice.tutorial;
 import org.junit.Before;
 import org.junit.Test;
 
-import uk.co.lvs.guice.tutorial.HelloStaticWorld;
+import uk.co.lvs.guice.tutorial.HelloWorld;
 
 import static junit.framework.Assert.assertEquals;
 
-public class HelloStaticWorldTest {
-    private HelloStaticWorld helloStaticWorld;
+public class HelloWorldTest {
+    private HelloWorld helloStaticWorld;
 
     @Before
     public void setUp() {
-        helloStaticWorld = new HelloStaticWorld();
+        helloStaticWorld = new HelloWorld();
     }
 
     @Test
